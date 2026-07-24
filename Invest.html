@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>
+      coin
+    </title>
+    <style>
+    p{
+      border:2px solid black;
+         padding: 60px;
+    border-radius: 18px;
+    box-shadow: 0 0 30px black;
+    background-color:#8A8A7A;
+    text-decoration: none;
+    color:white;
+    width:60%;
+    height:400px;
+    }
+    body{
+      background-image: url(money.png);
+      img {
+        width:100px;
+      }
+      
+         h1{
+    background-color: white;
+    width:100%;
+    height: 84.9px;
+  }
+      #img1{
+      width:55px;
+      }
+      button{
+        border:2px solid black;
+        padding:5px;
+         margin:5px;
+        border-radius: 8px;
+      }
+      #display {
+        border:2px solid black;
+         border-radius: 8px;
+         width:190px;
+         padding:10px;
+      }
+      a {
+        border:2px solid black;
+        background: linear-gradient(135degred,#dd2476);
+         text-decoration:none ;
+         color: white;
+         padding: 8px;
+         border-radius: 8px;
+         background-color:brown;
+      
+      }
+      #img2 {
+       width:150px;
+      padding: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZDnLeC0gLzGrQxek8sg2TzhR2Fxb08jiLlR3PrzHKw&s=">row Money  </h1>
+  
+     <form>
+    <p>
+    <input type="number"id="display"placeholder="Enter money...$"><br><br>
+<button onclick="showText('10')">10</button>
+<button onclick="showText('50')">50</button>
+<button onclick="showText('100')">100</button>
+<button onclick="showText('300')">300</button>
+<button onclick="showText('500')">500</button>
+<button onclick="showText('1000')">1000</button>
+<script>
+function showText(text){
+    document.getElementById("display").value = text;
+}
+</script><br><br>
+<a href="scaner.html">Deposit</a>
+<br><br>
+<img id="img2"src="bitcoin.png"
+
+</p>
+    </fieldset>
+  </body>
+  </html>

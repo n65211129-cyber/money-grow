@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splash Screen</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+.splash{
+    text-align:center;
+    animation:fadeIn 1s ease-in-out;
+}
+
+.splash img{
+    width:150px;
+    animation:zoom 2s infinite alternate;
+}
+
+.splash h2{
+    margin-top:20px;
+    font-size:20px;
+    color:darkblue;
+    animation:fadeIn 1s ease-in-out;
+    animation:zoom 2s infinite alternate;
+}
+
+@keyframes zoom{
+    from{transform:scale(1);}
+    to{transform:scale(1.1);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="splash">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZDnLeC0gLzGrQxek8sg2TzhR2Fxb08jiLlR3PrzHKw&s=" alt="Logo">
+    <h2>Grow Money</h2>
+</div>
+
+<script>
+setTimeout(function(){
+    window.location.href = "Grow_Money.html";
+},3000);
+</script>
+
+
+</body>
+</html>
